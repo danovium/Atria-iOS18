@@ -141,7 +141,10 @@
 		[self setAllowsLabelArea:self.allowsLabelArea];
 	}
 	[self _atriaSetupDropShadow:[[[objc_getClass("SBIconController") sharedInstance] iconManager] isEditing]];
-	[self _updateIconImageViewAnimated:YES];
+	SEL updateIconImageView = @selector(_updateIconImageViewAnimated:);
+	if([self respondsToSelector:updateIconImageView]) {
+		[self _updateIconImageViewAnimated:YES];
+	}
 }
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
