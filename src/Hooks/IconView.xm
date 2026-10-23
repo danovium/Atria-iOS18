@@ -135,6 +135,14 @@
 
 - (void)didMoveToSuperview {
 	%orig;
+
+	// iOS 18+: other SpringBoard UI (e.g. Control Center) also builds SBIconViews.
+	// Only touch icon views in locations Atria actually manages.
+	BOOL managed = IconIsInRoot(self) || IconIsInDock(self) || IconIsInFolder(self)
+		|| IconIsInAppLibrary(self) || IconIsInAppLibraryPod(self)
+		|| [self.location containsString:@"Floating"];
+	if(!managed) return;
+
 	if(self.superview && [self.superview isKindOfClass:objc_getClass("SBIconListView")]) {
 		self._atriaLastIconListView = (SBIconListView *)self.superview;
 		// Update allowsLabelArea
@@ -169,7 +177,9 @@
 - (void)_atriaSetupDropShadow:(BOOL)isEditing {
 	BOOL enabled = [[ARITweakManager sharedInstance] boolValueForKey:@"dropShadow"];
 	SBIcon *icon = [self icon];
-	BOOL widgetOrAppIcon = [icon application] || [icon isKindOfClass:objc_getClass("SBWidgetIcon")] || [icon isKindOfClass:objc_getClass("SBBookmarkIcon")];
+	// Not every SBIcon subclass implements -application (iOS 18+), so check first
+	BOOL hasApplication = [icon respondsToSelector:@selector(application)] && [icon application];
+	BOOL widgetOrAppIcon = hasApplication || [icon isKindOfClass:objc_getClass("SBWidgetIcon")] || [icon isKindOfClass:objc_getClass("SBBookmarkIcon")];
 	// Don't apply shadows in floating dock, because dynamic scaling of the app icons gets weird
 	// Use containsString instead of the macro because we need to check for the suggestions location too
 	if(enabled && !isEditing && widgetOrAppIcon && ![self.location containsString:@"Floating"]) {
