@@ -1,10 +1,27 @@
 # Atria iOS 18 experimental port
 Based on the s-gdn iOS 17 fork, with the supplied startup fixes and new iOS 18 widget interfaces.
 
-The test4 iOS 18 build uses native arm64e compilation and addresses the test3 preference-loader authentication failure. It is experimental and has not been tested on a device. See `IOS18-TEST-NOTES.md` for changes, Linux resource limits, build instructions, and validation limits. iOS 26 is unsupported.
+made by AI. no support will be provided
 
-Open this in browser to add my repo: https://s-gdn.github.io/repo.html
+Tested on iOS 18.5 with Dopamine 3.0.11
 
+# Bugs
+- yeah
+- what did u even expect its just ai slop
+
+
+# Installation (it's weird)
+- Install TweakSettings and Atria
+- Before respring, disable Tweak Injection
+- Open TweakSettings and turn off everything except Main Toggle and Layout Modifications
+- Re-enable Tweak Injection and re-enable the disabled Settings
+
+# Credits
+ - https://github.com/s-gdn/Atria-iOS17 (base)
+ - https://github.com/EthanArbuckle/iPhone17-1_18.2_22C152_Restore (springboard binary)
+ - pengubow (made verity bot linked to gpt)
+ - chatgpt (making a slop port even sloppier)
+   
 ## Building
 
 This fork includes a GitHub Actions workflow for building Atria
