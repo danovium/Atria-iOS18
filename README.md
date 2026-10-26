@@ -1,29 +1,21 @@
-# Atria for iOS 18
-PORTED BY AI, DO NOT CREDIT ME;
+# Atria iOS 18 experimental port
+Based on the s-gdn iOS 17 fork, with the supplied startup fixes and new iOS 18 widget interfaces.
 
-was intended as a personal project only, and it will stay like that. 
-- Pull requests, Bug fixes and Support won't be issued
+The test4 iOS 18 build uses native arm64e compilation and addresses the test3 preference-loader authentication failure. It is experimental and has not been tested on a device. See `IOS18-TEST-NOTES.md` for changes, Linux resource limits, build instructions, and validation limits. iOS 26 is unsupported.
 
-# Installation (it's weird)
-- Install .deb
-- Install TweakSettings
-- Before respring, disable Tweak Injection
-- Go into TweakSettings and disable Layout Modifications, then you can respring and re-enable Tweak Injection
-- if for some reason this does not work, turn off everything except the Main Toggle and re-enable them all after you re-enabled Tweak Injection
+Open this in browser to add my repo: https://s-gdn.github.io/repo.html
 
-# Bugs
-- yeah
-- its ai slop ofc it's gonna be bad
+## Building
 
-# Additional Notes
-- i apologize in advance to anyone trying to fix this manually
-- has only been tested on iOS 18.5 with Dopamine 3.0.11. Other version compatibility is unknown
+This fork includes a GitHub Actions workflow for building Atria
+using Theos on a macOS runner.
 
-# Credits
-- https://github.com/s-gdn/Atria-iOS17 (base) 
-- https://github.com/EthanArbuckle/iPhone17-1_18.2_22C152_Restore (springboard binary)
-- pengubow (made verity bot linked to gpt)
-- chatgpt (stupid model)
+To build your own copy:
 
+1. Fork this repository.
+2. Open the Actions tab and enable workflows.
+3. Run the build workflow.
+4. Download the generated `.deb` from the workflow artifacts.
 
-
+The resulting package is intended for rootless / roothide jailbreaks.
+Compatibility has only been confirmed on iOS 17.1.1 - 17.3.1

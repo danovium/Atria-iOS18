@@ -1,0 +1,26 @@
+[
+  {
+    "Package": "clang-21",
+    "Version": "1:21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67",
+    "Filename": "pool/main/l/llvm-toolchain-21/clang-21_21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67_amd64.deb",
+    "SHA256": "43167d4912316e591f4dc122bd8e9cd0c2db95c31edcc47cde97e89a496c2024"
+  },
+  {
+    "Package": "libclang-common-21-dev",
+    "Version": "1:21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67",
+    "Filename": "pool/main/l/llvm-toolchain-21/libclang-common-21-dev_21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67_amd64.deb",
+    "SHA256": "8b5d26e30f336b0f5727f506b9d3e31890d225efc1a5eb1f73ab4e253ced9da6"
+  },
+  {
+    "Package": "libclang-cpp21",
+    "Version": "1:21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67",
+    "Filename": "pool/main/l/llvm-toolchain-21/libclang-cpp21_21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67_amd64.deb",
+    "SHA256": "2e04f5de6f6f877f505a7abee85e1210d71b3b07d380ec5ebfaec45efe5a7fea"
+  },
+  {
+    "Package": "libllvm21",
+    "Version": "1:21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67",
+    "Filename": "pool/main/l/llvm-toolchain-21/libllvm21_21.1.8~++20251221032947+2078da43e25a-1~exp1~20251221153113.67_amd64.deb",
+    "SHA256": "06646d519de58f391ca049b8a47bbd678c929540f4cb8a73caac29818c5cf720"
+  }
+]
