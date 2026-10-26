@@ -1,6 +1,7 @@
 # Atria iOS 18 experimental port
 Based on the s-gdn iOS 17 fork, with the supplied startup fixes and new iOS 18 widget interfaces.
 
+PLEASE DO NOT CREDIT ME FOR THIS,
 made by AI. no support will be provided
 
 Tested on iOS 18.5 with Dopamine 3.0.11
