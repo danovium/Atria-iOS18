@@ -23,17 +23,3 @@ Tested on iOS 18.5 with Dopamine 3.0.11
  - pengubow (made verity bot linked to gpt)
  - chatgpt (making a slop port even sloppier)
    
-## Building
-
-This fork includes a GitHub Actions workflow for building Atria
-using Theos on a macOS runner.
-
-To build your own copy:
-
-1. Fork this repository.
-2. Open the Actions tab and enable workflows.
-3. Run the build workflow.
-4. Download the generated `.deb` from the workflow artifacts.
-
-The resulting package is intended for rootless / roothide jailbreaks.
-Compatibility has only been confirmed on iOS 17.1.1 - 17.3.1
