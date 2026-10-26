@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>In order to edit layout, 3D touch a homescreen icon, or triple tap behind them (on your wallpaper)</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>ARIHeaderCell</string>
+			<key>height</key>
+			<integer>120</integer>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>ARITwitterCell</string>
+			<key>displayName</key>
+			<string>ren</string>
+			<key>description</key>
+			<string>Developer</string>
+			<key>height</key>
+			<integer>70</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>exportSettingsString</string>
+			<key>label</key>
+			<string>Export Settings</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>importSettingsString</string>
+			<key>label</key>
+			<string>Import Settings from Clipboard</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Enable/Disable</string>
+			<key>footerText</key>
+			<string>A respring is required for these settings to change. Enabling "Save State" allows your icon layout to be preserved, even when going to safemode/stock.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.lau.AtriaPrefs</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Main Toggle</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.lau.AtriaPrefs</string>
+			<key>key</key>
+			<string>layoutEnabled</string>
+			<key>label</key>
+			<string>Layout Modifications</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.lau.AtriaPrefs</string>
+			<key>key</key>
+			<string>enableAppLibrary</string>
+			<key>label</key>
+			<string>Force App Library</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>me.lau.AtriaPrefs</string>
+			<key>key</key>
+			<string>saveIconState</string>
+			<key>label</key>
+			<string>Save Icon State</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Options</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>ARIChildListController</string>
+			<key>label</key>
+			<string>General Options</string>
+			<key>child</key>
+			<string>General</string>
+			<key>icon</key>
+			<string>gear</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>ARIChildListController</string>
+			<key>label</key>
+			<string>Editor</string>
+			<key>child</key>
+			<string>Editor</string>
+			<key>icon</key>
+			<string>sliders</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>ARIChildListController</string>
+			<key>label</key>
+			<string>Page Labels</string>
+			<key>child</key>
+			<string>PageLabels</string>
+			<key>icon</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>detail</key>
+			<string>ARIChildListController</string>
+			<key>label</key>
+			<string>More Customization</string>
+			<key>child</key>
+			<string>Customization</string>
+			<key>icon</key>
+			<string>paint</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>resetPrefs:</string>
+			<key>label</key>
+			<string>Reset All Preferences</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>resetSaveState:</string>
+			<key>label</key>
+			<string>Reset Save State</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Credits</string>
+			<key>footerText</key>
+			<string>Thank you to everyone who has helped me along the way of making this tweak! A special thanks to everyone who helped test the tweak throughout its various stages. Much love to you all 💜
+- ren</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>ARITwitterCell</string>
+			<key>username</key>
+			<string>Quartz88244782</string>
+			<key>displayName</key>
+			<string>cakePhone</string>
+			<key>description</key>
+			<string>Tweak Icon/Advice</string>
+			<key>height</key>
+			<integer>70</integer>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>ARITwitterCell</string>
+			<key>username</key>
+			<string>Kutarin_</string>
+			<key>displayName</key>
+			<string>Alpha_Stream</string>
+			<key>description</key>
+			<string>Icons/Advice</string>
+			<key>height</key>
+			<integer>70</integer>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>ARITwitterCell</string>
+			<key>displayName</key>
+			<string>Atria Beta Testers</string>
+			<key>description</key>
+			<string>🐜</string>
+			<key>height</key>
+			<integer>70</integer>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Atria</string>
+</dict>
+</plist>

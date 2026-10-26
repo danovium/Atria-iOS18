@@ -1,0 +1,14 @@
+Package: me.lau.atria
+Name: Atria
+Version: 1.4.1-sgdnfix2+ios18test4
+Architecture: iphoneos-arm64
+Description: Experimental Atria compatibility build for iOS 18.
+ .
+ Includes startup compatibility probes and object-based iOS 18 widget hooks.
+ Device compatibility is unverified. Based on the s-gdn iOS 17 fork.
+ Original tweak by ren7995.
+Maintainer: s-gdn
+Author: ren7995, s-gdn
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader, ws.hbang.alderis (>= 1.1)
+Conflicts: com.irepo.boxy4, me.kritanta.homepluspro
