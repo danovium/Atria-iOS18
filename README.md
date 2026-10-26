@@ -14,7 +14,7 @@ Tested on iOS 18.5 with Dopamine 3.0.11
 # Installation (it's weird)
 - Install TweakSettings and Atria
 - Before respring, disable Tweak Injection
-- Open TweakSettings and turn off everything except Main Toggle and Layout Modifications
+- Open TweakSettings and turn off everything except Main Toggle
 - Re-enable Tweak Injection and re-enable the disabled Settings
 
 # Credits
