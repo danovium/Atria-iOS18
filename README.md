@@ -22,6 +22,10 @@ if anyone decides to do that, u can take all the credit for it lol
 - Open TweakSettings and turn off Layout Modifications
 - Re-enable Tweak Injection and re-enable Layout Modifications
 
+after a while you dont need to do this anymore, i don't know why
+maybe it has to do with something you need to install i have no idea
+
+
 # Credits
  - https://github.com/s-gdn/Atria-iOS17 (base)
  - https://github.com/EthanArbuckle/iPhone17-1_18.2_22C152_Restore (springboard binary)
